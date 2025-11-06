@@ -1,0 +1,86 @@
+header{
+    background-color: #393838;
+    font-family: monospace;
+    text-align: center;
+    font-size: 1cm;
+    border: solid #393838;
+}
+body{
+  margin: 0;
+  background-color: #111;
+  color: white;
+  display: flex;
+}
+main{
+
+  padding-left: 125px;
+}
+footer{
+  background-color: rgb(40, 0, 0);
+  height: 50px;
+}
+
+a:link{
+  text-decoration: none;
+  color: white
+}
+
+.sidebar{
+  width: 120px;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.HOME-BX{
+  display: flex;
+}
+.VALO-BX{
+  display: flex;
+}
+.FN-BX{
+  display: flex;
+}
+.LA-BX{
+  display: flex;
+}
+.LOL-BX{
+  display: flex;
+}
+.BLUE-BX{
+  display: flex;
+}
+.WUWA-BX{
+  display: flex;
+}
+.B {
+  width: 80px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, filter 0.2s;
+}
+.B:hover{
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+.HOME { background-color: orange; }
+.VALO { background-color: #800000; }
+.FN { background-color: #0096ff; }
+.LA { background-color: #5e3d00; }
+.LOL { background-color: #005bff; }
+.BPSR { background-color: #6b00b3; }
+.WUWA { background-color: #00997a; }
+
+
