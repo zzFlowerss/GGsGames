@@ -1,100 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GGAMES</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GGame</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <!-- Sidebar -->
     <div class="sidebar">
-        <div class="B HOME">
-        <a href="#HOME">HOME</a>
-        </div>
-        <div class="B VALO">
-        <a href="#VALO">VALO</a>
-        </div>
-        <div class="B FN">
-        <a href="#FN">FN</a>
-        </div>
-        <div class="B LA">
-        <a href="#LA">LA</a>
-        </div>
-        <div class="B LOL">
-        <a href="#LOL">LOL</a>
-        </div>
-        <div class="B BPSR">
-        <a href="#BLUE">BPSR</a>
-        </div>
-        <div class="B WUWA">
-        <a href="#WUWA">WUWA</a>
-        </div>
+      <a href="#home" class="button home">HOME</a>
+      <a href="#valorant" class="button valo">VALO</a>
+      <a href="#fortnite" class="button fn">FN</a>
+      <a href="#lostark" class="button lostark">LA</a>
+      <a href="#lol" class="button lol">LOL</a>
+      <a href="#blue" class="button blue">BR</a>
+      <a href="#wuth" class="button wuth">WW</a>
     </div>
-    <main>
-        <header>
-        <h1>GGAMES</h1>
-        </header>
-        <section class="HOME-BX" id="HOME">
-            <div class="H-LOGO">   
-                <img src="Images/HOME.png">
-            </div>
-            <div class="H-INFO">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cum maxime ad sint ab ipsum a impedit, at vitae molestiae consequuntur ratione quisquam! Rerum soluta alias corporis, quasi est facilis?
-            </div>
-        </section>
-        <section class="VALO-BX" id="VALO">
-            <div class="V-LOGO">
-                <img src="Images/VALO.jpg">
-            </div>
-            <div class="V-INFO">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque voluptatibus ipsam impedit libero consequuntur totam placeat ipsa fugiat numquam accusantium ut quaerat, blanditiis eum deserunt provident veniam illum hic.
-            </div>
-        </section>
-        <section class="FN-BX" id="FN">
-            <div class="F-LOGO">
-                <img src="Images/FORTNITE.png">
-            </div>
-            <div class="F-INFO">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum totam iure porro illum accusamus itaque laboriosam, quam quo, repellendus nemo ducimus aliquid, non mollitia? Dolorum voluptatibus dicta quasi id!
-            </div>
-        </section>
-        <section class="LA-BX" id="LA">
-            <div class="LA-LOGO">
-                <img src="Images/LOSTARK.jpg">
-            </div>
-            <div class="LA-INFO">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque quidem nemo eos deleniti corporis tenetur, harum quibusdam enim, animi optio hic odit, officiis voluptates? Ut ratione itaque dignissimos doloremque.
-            </div>
-        </section>
-        <section class="LOL-BX" id="LOL">
-            <div class="LOL-LOGO">
-                <img src="Images/LEAGUE.jpg">
-            </div>
-            <div class="LOL-INFO">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus odio atque neque ducimus sapiente impedit similique vel aliquam corporis, natus reiciendis voluptatum incidunt excepturi sed repellendus ipsa accusamus molestiae fugiat?
-            </div>
-        </section>
-        <section class="BLUE-BX" id="BLUE">
-            <div class="BLUE-LOGO">
-                <img src="Images/BLUE.jpg">
-            </div>
-            <div class="BP-INFO">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos laborum ducimus eveniet explicabo maiores, ipsam officiis ad, quae quas, maxime placeat eos non veritatis cupiditate rem sapiente voluptates itaque animi?
-            </div>
-        </section>
-        <section class="WUWA-BX" id="WUWA">
-            <div class="WUWA-LOGO">
-                <img src="Images/WUWA.jpg">
-            </div>
-            <div class="WUWA-INFO">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolor. Hic mollitia voluptatibus dicta expedita exercitationem dolores quidem quis ullam, tenetur aperiam perferendis, enim quisquam, necessitatibus sunt voluptates dolorum modi?
-            </div>
-        </section>
-    <footer>
-    Discord, instagram, tiktok user: @zzFlowers
-    </footer>
-    </main>
 
+    <!-- Main Content -->
+    <div class="main">
+      <!-- Home Section -->
+      <div class="game-card home-card" id="home">
+        <div class="game-logo home-logo">H</div>
+        <div class="game-info">
+          <h2>HOME</h2>
+          <p>Welcome to the GGame! Explore your favorite games, check stats, and navigate quickly.</p>
+        </div>
+      </div>
+
+      <!-- Valorant -->
+      <div class="game-card valorant" id="valorant">
+        <div class="game-logo v-logo">V</div>
+        <div class="game-info">
+          <h2>VALORANT</h2>
+          <p>Team-based tactical shooter by Riot Games.</p>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fortnite -->
+      <div class="game-card fortnite" id="fortnite">
+        <div class="game-logo f-logo">F</div>
+        <div class="game-info">
+          <h2>FORTNITE</h2>
+          <p>Battle Royale game with creative building and survival mechanics.</p>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star empty">&#9733;</span>
+            <span class="star empty">&#9733;</span>
+            <span class="star empty">&#9733;</span>
+            <span class="star empty">&#9733;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lost Ark -->
+      <div class="game-card lostark" id="lostark">
+        <div class="game-logo la-logo">LA</div>
+        <div class="game-info">
+          <h2>LOST ARK</h2>
+          <p>Action MMORPG featuring fast-paced combat and exploration.</p>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span> <!-- 6 stars now -->
+          </div>
+        </div>
+      </div>
+
+      <!-- League of Legends -->
+      <div class="game-card lol" id="lol">
+        <div class="game-logo lol-logo">L</div>
+        <div class="game-info">
+          <h2>LEAGUE OF LEGENDS</h2>
+          <p>Multiplayer online battle arena game by Riot Games.</p>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star empty">&#9733;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BP SR -->
+      <div class="game-card blue" id="blue">
+        <div class="game-logo br-logo">B</div>
+        <div class="game-info">
+          <h2>BLUE PROTOCOL: STAR RESONANCE</h2>
+          <p>Anime-inspired RPG with immersive story and battles.</p>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wuthering Waves -->
+      <div class="game-card wuth" id="wuth">
+        <div class="game-logo ww-logo">W</div>
+        <div class="game-info">
+          <h2>WUTHERING WAVES</h2>
+          <p>Open-world action RPG featuring fast combat and exploration.</p>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

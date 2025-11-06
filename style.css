@@ -1,64 +1,36 @@
-header{
-    background-color: #393838;
-    font-family: monospace;
-    text-align: center;
-    font-size: 1cm;
-    border: solid #393838;
-}
-body{
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   background-color: #111;
   color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
   display: flex;
-}
-main{
-
-  padding-left: 125px;
-}
-footer{
-  background-color: rgb(40, 0, 0);
-  height: 50px;
+  height: 100vh;
 }
 
-a:link{
-  text-decoration: none;
-  color: white
-}
-
-.sidebar{
+.sidebar {
   width: 120px;
   background-color: #222;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
   padding-top: 20px;
+  gap: 20px;
   position: fixed;
   height: 100%;
 }
 
-.HOME-BX{
-  display: flex;
-}
-.VALO-BX{
-  display: flex;
-}
-.FN-BX{
-  display: flex;
-}
-.LA-BX{
-  display: flex;
-}
-.LOL-BX{
-  display: flex;
-}
-.BLUE-BX{
-  display: flex;
-}
-.WUWA-BX{
-  display: flex;
-}
-.B {
+.button {
   width: 80px;
   height: 60px;
   display: flex;
@@ -71,16 +43,96 @@ a:link{
   text-decoration: none;
   transition: transform 0.2s, filter 0.2s;
 }
-.B:hover{
+
+.button:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
-.HOME { background-color: orange; }
-.VALO { background-color: #800000; }
-.FN { background-color: #0096ff; }
-.LA { background-color: #5e3d00; }
-.LOL { background-color: #005bff; }
-.BPSR { background-color: #6b00b3; }
-.WUWA { background-color: #00997a; }
 
+.home { background-color: orange; }
+.valo { background-color: #800000; }
+.fn { background-color: #0096ff; }
+.lostark { background-color: #5e3d00; }
+.lol { background-color: #005bff; }
+.blue { background-color: #6b00b3; }
+.wuth { background-color: #00997a; }
 
+.main {
+  flex-grow: 1;
+  background-color: #000;
+  padding: 40px 60px 40px 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  overflow-y: auto;
+}
+
+.game-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.game-card.home-card { background-color: #333; }
+.game-card.valorant { background-color: #7a0019; }
+.game-card.fortnite { background-color: #0096ff; }
+.game-card.lostark { background-color: #5e3d00; }
+.game-card.lol { background-color: #005bff; }
+.game-card.blue { background-color: #6b00b3; }
+.game-card.wuth { background-color: #00997a; }
+
+.game-logo {
+  width: 180px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.la-logo { font-size: 60px; line-height: 1; }
+.br-logo { font-size: 60px; line-height: 1; }
+.ww-logo { font-size: 60px; line-height: 1; }
+.home-logo { font-size: 80px; line-height: 1; }
+
+.v-logo { color: white; transform: scale(0.9); }
+.f-logo { color: white; }
+.la-logo { color: black; }
+.lol-logo { color: white; }
+.br-logo { color: white; }
+.ww-logo { color: black; }
+.home-logo { color: white; }
+
+.game-info h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.game-info p {
+  color: #eee;
+  max-width: 600px;
+}
+
+/* Star rating */
+.star-rating {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: nowrap; /* keep stars in one line */
+}
+
+.star {
+  font-size: 24px;
+  color: #ffd700; /* yellow/gold stars */
+}
+
+.star.empty {
+  color: #555; /* grey for empty stars */
+}
